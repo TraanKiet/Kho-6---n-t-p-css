@@ -5,11 +5,19 @@
   text-align: center;
 }
 a[href] {
-  background-color: rgb(0, 255, 251);
-  border-radius: 50px;
+  display: inline-block;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 150px;
+  background-color: rgb(40, 147, 197);
+  border-radius: 999px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
 a:hover {
-  background-color: rgb(93, 147, 189);
+  background-color: rgb(93, 189, 181);
 }
 .picture {
   flex: 1; /* Mỗi ảnh sẽ chiếm một phần bằng nhau trong không gian còn lại */
@@ -32,4 +40,21 @@ a:hover {
 }
 .pic1:first-child {
   margin-left: 0;
+}
+.content2 {
+  text-align: center;
+  margin-top: 50px;
+  padding: 50px;
+}
+.content2 a {
+  display: inline-block;
+  margin: 15px 15px;
+  padding: 15px 25px;
+  background-color: rgb(40, 147, 197);
+  border-radius: 999px;
+  text-decoration: none;
+  color: black;
+}
+.content2 a:hover {
+  background-color: rgb(93, 189, 181);
 }
