@@ -1,7 +1,7 @@
 .content {
   background-color: lightblue;
   padding: 20px;
-  border-radius: 1000px;
+  /* border-radius: 1000px; */
   text-align: center;
   background: linear-gradient(to right, #eea1fd, #6dc0e7);
 }
@@ -21,6 +21,7 @@ a:hover {
   background-color: rgb(93, 189, 181);
 }
 .picture {
+  border-radius: 100px;
   flex: 1; /* Mỗi ảnh sẽ chiếm một phần bằng nhau trong không gian còn lại */
   max-width: 60%; /* Đặt chiều rộng tối đa cho mỗi ảnh (ví dụ: 3 ảnh trên 1 dòng) */
   height: 290px; /* Đặt chiều cao cố định để chúng có cùng chiều cao */
@@ -29,6 +30,8 @@ a:hover {
   object-fit: cover;
   padding: 50px;
   margin: auto;
+  /* box shadow : đối số 1 là trục X , đối số 2 là trục Y , đối số 3 là độ nhòe , đối số 4 là bán kính trải rộng */
+  box-shadow: -60px 60px 60px 10px rgba(83, 182, 191, 0.418);
 }
 .pic1,
 .pic2,
