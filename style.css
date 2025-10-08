@@ -16,6 +16,8 @@ a[href] {
   text-decoration: none;
   color: black;
   text-align: center;
+  /* Quản lý sự kiện chuột , None : không tương tác được với nút link , ctrl+/ để bật lệnh này */
+  /* pointer-events: none; */
 }
 a:hover {
   background-color: rgb(93, 189, 181);
@@ -41,6 +43,8 @@ a:hover {
   display: block;
   border: 10px solid rgb(49, 210, 191);
   margin-left: -60px;
+  /* Quản lý sự kiện chuột , None : không tương tác được với ảnh , ví dụ như tải về . */
+  pointer-events: none;
 }
 .pic1:first-child {
   margin-left: 0;
