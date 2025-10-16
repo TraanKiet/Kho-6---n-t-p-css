@@ -67,28 +67,46 @@ a:hover {
   background-color: rgb(93, 189, 181);
 }
 /* Khai báo root hoặc html để áp dụng cho toàn trang */
+/* Thêm CSS Position Static vs Relative cơ bản */
 :root {
+  --width: 100px;
   --text-align: center;
   --box-height: 100px;
   --box-color: lightcoral;
 }
+.content1 {
+  /* Căn text giữa các khối */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
 .box1 {
   text-align: var(--text-align);
+  width: var(--width);
   height: var(--box-height);
   background-color: var(--box-color);
   margin: 0 auto;
+  background: red;
+  position: relative;
+  left: 50px;
 }
 .box2 {
   text-align: var(--text-align);
+  width: var(--width);
   height: var(--box-height);
   background-color: var(--box-color);
   margin: 0 auto;
+  background: blue;
+  position: relative;
+  right: 50px;
 }
 .box3 {
   text-align: var(--text-align);
+  width: var(--width);
   height: var(--box-height);
   background-color: var(--box-color);
   margin: 0 auto;
+  background: rgb(0, 255, 0);
 }
 /* giá trị có thể bị ghi đè */
 /* .box3 {
@@ -105,10 +123,26 @@ span {
   color: rgb(40, 147, 197);
 }
 .box4 {
+  margin: 0 auto;
+  width: var(--width);
   text-align: var(--text-align);
   height: 100px;
   background-color: var(
     --box-color,
     rgb(92, 216, 228)
   ); /* Giá trị thứ 2 là giá trị mặc định nếu biến không tồn tại. Backup */
+  position: relative;
+  top: 50px;
+}
+.box5 {
+  margin: 0 auto;
+  width: var(--width);
+  text-align: var(--text-align);
+  height: 100px;
+  background-color: var(
+    --box-color,
+    rgb(92, 228, 112)
+  ); /* Giá trị thứ 2 là giá trị mặc định nếu biến không tồn tại. Backup */
+  position: relative;
+  bottom: 20px;
 }
