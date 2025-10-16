@@ -66,3 +66,49 @@ a:hover {
 .content2 a:hover {
   background-color: rgb(93, 189, 181);
 }
+/* Khai báo root hoặc html để áp dụng cho toàn trang */
+:root {
+  --text-align: center;
+  --box-height: 100px;
+  --box-color: lightcoral;
+}
+.box1 {
+  text-align: var(--text-align);
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin: 0 auto;
+}
+.box2 {
+  text-align: var(--text-align);
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin: 0 auto;
+}
+.box3 {
+  text-align: var(--text-align);
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin: 0 auto;
+}
+/* giá trị có thể bị ghi đè */
+/* .box3 {
+  height: 200px;
+} */
+/* Khai báo trong phần tử nào thì áp dụng được ptu đó , và các thẻ thấp hơn nó ( thẻ con ). */
+.vip {
+  text-align: var(--text-align);
+  --p_font-size: 30px;
+  /* font-size: var(--p_font-size); */
+}
+span {
+  font-size: var(--p_font-size);
+  color: rgb(40, 147, 197);
+}
+.box4 {
+  text-align: var(--text-align);
+  height: 100px;
+  background-color: var(
+    --box-color,
+    rgb(92, 216, 228)
+  ); /* Giá trị thứ 2 là giá trị mặc định nếu biến không tồn tại. Backup */
+}
